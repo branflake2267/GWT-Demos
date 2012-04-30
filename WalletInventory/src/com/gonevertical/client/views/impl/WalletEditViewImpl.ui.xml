@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:org.gonevertical.core.client.loading" xmlns:p2="urn:import:org.gonevertical.core.client.input">
+	<ui:style>
+		
+	</ui:style>
+	<g:VerticalPanel>
+		<g:VerticalPanel ui:field="pLoggedIn">
+			<g:HorizontalPanel>
+			<g:PushButton text="I&apos;m Finished" ui:field="bFinished"/>
+			<g:HTML wordWrap="true">&nbsp;</g:HTML>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<p1:LoadingWidget ui:field="wLoading"/>
+			</g:Cell>
+		</g:HorizontalPanel>
+			<g:FocusPanel ui:field="pFocusName">
+			<g:HorizontalPanel width="100%" height="30px">
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:HTML wordWrap="true">My wallets name is&nbsp;</g:HTML>
+			</g:Cell>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:VerticalPanel width="100%">
+					<p2:WiseTextBox width="302px" ui:field="tbName"/>
+			</g:VerticalPanel>
+			</g:Cell>
+		</g:HorizontalPanel>
+		</g:FocusPanel>
+			<g:HorizontalPanel>
+			<g:PushButton text="Add" ui:field="bAdd"/>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:HTML wordWrap="true">&nbsp;Items in my wallet</g:HTML>
+			</g:Cell>
+		</g:HorizontalPanel>
+			<g:VerticalPanel ui:field="pList"/>
+			<g:HTML wordWrap="true">&nbsp;</g:HTML>
+			<g:HTML wordWrap="true">(Do not store actual account numbers here!)</g:HTML>
+		</g:VerticalPanel>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<g:VerticalPanel ui:field="pLoggedOut">
+			<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_CENTER">
+				<g:HTML wordWrap="true">Sign in to see your wallet.</g:HTML>
+			</g:Cell>
+		</g:VerticalPanel>
+		</g:Cell>
+	</g:VerticalPanel>
+</ui:UiBinder> 

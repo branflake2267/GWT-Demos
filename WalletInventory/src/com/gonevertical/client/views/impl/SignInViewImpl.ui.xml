@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:org.gonevertical.core.client.loading">
+	<ui:style>
+		
+	</ui:style>
+	<g:VerticalPanel>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<p1:LoadingWidget ui:field="wLoading"/>
+		</g:Cell>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<g:HTML wordWrap="true" ui:field="htmlSignIn">&nbsp;</g:HTML>
+		</g:Cell>
+		<g:HTML wordWrap="true">My Wallet Inventory</g:HTML>
+		<g:VerticalPanel>
+			<g:HTML wordWrap="true">Store the 1800 numbers to call when your wallet is stolen here. (Do not store your account numbers here!)</g:HTML>
+		</g:VerticalPanel>
+		<g:HTML wordWrap="true">&nbsp;</g:HTML>
+		<g:HTML wordWrap="true">alpha</g:HTML>
+	</g:VerticalPanel>
+</ui:UiBinder> 

@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:org.gonevertical.core.client.loading">
+	<ui:style>
+		
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HorizontalPanel ui:field="hpMenu">
+			<g:PushButton text="Add" ui:field="bAdd"/>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:HTML wordWrap="true">&nbsp;My Wallets&nbsp;</g:HTML>
+			</g:Cell>
+			<p1:LoadingWidget ui:field="wLoading"/>
+		</g:HorizontalPanel>
+		<g:VerticalPanel ui:field="pList"/>
+	</g:VerticalPanel>
+</ui:UiBinder> 

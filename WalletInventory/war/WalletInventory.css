@@ -1,0 +1,60 @@
+
+/* NOTE: com/gonevertical/public/css/style.css is loaded in project.gwt.xml config file */
+
+html { 
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Puritan', arial, serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Puritan', arial, serif;
+}
+
+/* Google Web Fonts http://www.google.com/webfonts */ 
+@import url(http://fonts.googleapis.com/css?family=Puritan:400,700,400italic,700italic);
+
+
+/* on module load loading */
+.app-loading {
+	padding-left: 5px;
+}
+
+
+.app-loginwidget {
+  padding: 4px;
+}
+
+
+
+
+
+.test1 {
+  border:1px solid #FF0000;
+}
+.test2 {
+  border:1px solid blue;
+}
+.test3 {
+  border:1px solid #00FF00;	
+}
+.test4 {
+  border:1px solid #000000;
+}
+.test5 {
+  border:1px solid grey;
+}
+.test6 {
+  border:1px solid #0000FF;
+}
+.test7 {
+  border:1px solid #EFEFEF;
+}
+.test8 {
+  border:1px solid #FFFF00;
+}
