@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.gonevertical.client.app.core">
+	<ui:style>
+		
+	</ui:style>
+	<g:VerticalPanel>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<p1:LoadingWidget ui:field="wLoading"/>
+		</g:Cell>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<g:HTML wordWrap="true" ui:field="htmlSignIn">&nbsp;</g:HTML>
+		</g:Cell>
+		<g:HTML wordWrap="true">GWT Demo using Activities and Places, RequestFactory and Editors.</g:HTML>
+		<g:VerticalPanel>
+			<g:HTML wordWrap="true"></g:HTML>
+		</g:VerticalPanel>
+		<g:HTML wordWrap="true">&nbsp;</g:HTML>
+		<g:HTML wordWrap="true"></g:HTML>
+		<g:HTML wordWrap="true" ui:field="htmlLink"><a>Goto PeoplePlaceList</a></g:HTML>
+	</g:VerticalPanel>
+</ui:UiBinder> 

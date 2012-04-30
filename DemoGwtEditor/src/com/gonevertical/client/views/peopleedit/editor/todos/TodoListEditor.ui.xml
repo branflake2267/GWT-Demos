@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:FlowPanel ui:field="pWidget">
+		<g:HorizontalPanel>
+			<g:PushButton text="Add" ui:field="bAdd"/>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:HTML wordWrap="true">&nbsp;Todos</g:HTML>
+			</g:Cell>
+		</g:HorizontalPanel>
+		<g:FlowPanel ui:field="plist"/>
+	</g:FlowPanel>
+</ui:UiBinder> 

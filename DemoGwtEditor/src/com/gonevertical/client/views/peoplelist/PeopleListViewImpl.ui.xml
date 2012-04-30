@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.gonevertical.client.app.core" xmlns:p2="urn:import:com.google.gwt.user.cellview.client" xmlns:p3="urn:import:com.gonevertical.client.views.widgets.paging">
+	<ui:style>
+		
+	</ui:style>
+	<g:VerticalPanel>
+		<g:Cell horizontalAlignment="ALIGN_CENTER">
+			<p1:LoadingWidget ui:field="wLoading"/>
+		</g:Cell>
+		<g:HTML wordWrap="true" ui:field="htmlSignIn"></g:HTML>
+		<g:HTML wordWrap="true"><b>Awesome People</b></g:HTML>
+		<g:FlowPanel ui:field="pContent">
+			<g:HorizontalPanel>
+				<g:Cell verticalAlignment="ALIGN_MIDDLE">
+					<g:PushButton text="Add" ui:field="bAdd"/>
+				</g:Cell>
+			<g:HTML wordWrap="true">&nbsp;</g:HTML>
+			<g:HTML wordWrap="true">&nbsp;&nbsp;&nbsp;&nbsp;</g:HTML>
+			<g:TextBox title="Search more than one name input John Doe" ui:field="tbSearch"/>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:PushButton text="Search" ui:field="bSearch"/>
+			</g:Cell>
+		</g:HorizontalPanel>
+			<g:HTML wordWrap="true">&nbsp;</g:HTML>
+		</g:FlowPanel>
+		<p2:DataGrid width="500px" height="200px" ui:field="grid"/>
+		<p3:Paging ui:field="wPage"/>
+	</g:VerticalPanel>
+</ui:UiBinder> 

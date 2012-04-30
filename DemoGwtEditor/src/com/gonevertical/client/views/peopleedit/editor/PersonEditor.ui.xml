@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.editor.ui.client" xmlns:p2="urn:import:com.gonevertical.client.views.peopleedit.editor" xmlns:p3="urn:import:com.gonevertical.client.views.widgets" xmlns:p4="urn:import:com.gonevertical.client.views.widgets.richtextarea" xmlns:p5="urn:import:com.gonevertical.client.views.peopleedit.editor.todos">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:Grid>
+			<g:row>
+				<g:customCell>
+					<g:HTML wordWrap="true">First Name</g:HTML>
+				</g:customCell>
+				<g:customCell>
+					<p1:ValueBoxEditorDecorator ui:field="nameFirst">
+						<p1:valuebox>
+							<g:TextBox/>
+						</p1:valuebox>
+					</p1:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:HTML wordWrap="true">Last Name</g:HTML>
+				</g:customCell>
+				<g:customCell>
+					<p1:ValueBoxEditorDecorator ui:field="nameLast">
+						<p1:valuebox>
+							<g:TextBox/>
+						</p1:valuebox>
+					</p1:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:HTML wordWrap="true">Active</g:HTML>
+				</g:customCell>
+				<g:customCell>
+					<g:SimpleCheckBox ui:field="active"/>
+				</g:customCell>
+			</g:row>
+ 			<g:row>
+				<g:customCell>
+					<g:HTML wordWrap="true">Gender</g:HTML>
+				</g:customCell>
+				<g:customCell>
+					<g:ValueListBox ui:field="gender"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:HTML wordWrap="true">Note</g:HTML>
+				</g:customCell>
+				<g:customCell>
+					<p4:RichTextAreaEditor ui:field="note"/>
+				</g:customCell> 
+			</g:row> 
+		</g:Grid>
+			<g:FlowPanel>
+				<p5:TodoListEditor ui:field="todos"/>
+			</g:FlowPanel>
+		</g:HorizontalPanel>
+	</g:VerticalPanel>
+</ui:UiBinder> 

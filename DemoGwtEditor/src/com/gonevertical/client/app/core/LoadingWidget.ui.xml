@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HorizontalPanel ui:field="pWidget">
+		<g:Cell verticalAlignment="ALIGN_MIDDLE">
+			<g:Image ui:field="imgLoading" width="20px" height="20px"/>
+		</g:Cell>
+		<g:HTML wordWrap="true" ui:field="htmlSpacer">&nbsp;</g:HTML>
+		<g:Cell verticalAlignment="ALIGN_MIDDLE">
+			<g:HTML wordWrap="true" ui:field="htmlMessage"/>
+		</g:Cell>
+	</g:HorizontalPanel>
+</ui:UiBinder> 
